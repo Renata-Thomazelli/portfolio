@@ -127,56 +127,101 @@
               </div>
       </section><!-- End About Section -->
       <!-- ======= Breadcrumbs ======= -->
-      <section id="breadcrumbs" class="breadcrumbs">
-          <div class="container">
+      <!--<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
 
-              <div class="d-flex justify-content-between align-items-center">
-                  <h2>Portfolio Details</h2>
-                  <!--<ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li>Portfolio Details</li>
-                </ol>-->
-              </div>
-
-          </div>
-      </section><!-- End Breadcrumbs -->
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Portfolio Details</h2>
+            <!--<ol>
+              <li><a href="index.html">Home</a></li>
+              <li>Portfolio Details</li>
+          </ol>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</section><!-- End Breadcrumbs -->
       <!-- ======= Portfolio Details Section ======= -->
-      <section id="portfolio" class="portfolio">
-          <div class="container">
+      <div>
+          <section id="portfolio" class= "portfolio-bg"">
+              <div class="container">
 
-              <div class="portfolio-details-container">
+                  <div class="section-title">
+                      <h2>Portfolio</h2>
+                  </div>
+                                    
+                  <p>Here I have selected some jobs I'm workinf it. bla bla</p>
+                  <p><a href="#ML_MCAS"> Multilabel classification with amphibians species.</a></p>
+                  <p><a href="#ML_LRBS"> Linear Regression with Bikes in Seoul.</a></p>
 
-                  <div class="owl-carousel portfolio-details-carousel">
-                      <img src="assets/img/amphibians.jpg" class="img-fluid" alt="">
-                      <img src="assets/img/Bar Plot by type of Amphibians.png" class="img-fluid" alt="">
-                      <!--<img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">-->
-                  </div><h2> Amphibians Project</h2>
+                  <div class="portfolio-details-container" ,style='margin-bottom: -100px'>
+                      <h2 id="ML_MCAS"> Amphibians Project</h2>
 
-                  <div class="portfolio-info">
-                      <h3>Project information</h3>
-                      <ul>
-                          <li><strong>Category</strong>: Machine Learning MultiLabel Classification Problem</li>
-                          <li><strong>Client</strong>: UC Irvine Machine Learning Repository</li>
-                          <li><strong>Project date</strong>: August, 2023</li>
-                          <li><strong>Project URL</strong>: <a href="#">www.github.com/Renata-Thomazelli/amphibians</a></li>
-                      </ul>
+                      <div class="owl-carousel portfolio-details-carousel" ,style='margin-bottom: +30px'>
+                          <img src="assets/img/amphibians.jpg" class="img-fluid" alt="">
+                          <img src="assets/img/Bar Plot by type of Amphibians.png" class="img-fluid" alt="">
+                          <!--<img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">-->
+                      </div>
+
+                      <div class="portfolio-info" ,style='margin-top: -30px'>
+
+                          <h3>Project information</h3>
+                          <ul>
+                              <li><strong>Category</strong>: Machine Learning MultiLabel Classification Problem</li>
+                              <li><strong>Client</strong>: UC Irvine Machine Learning Repository</li>
+                              <li><strong>Project date</strong>: August, 2023</li>
+                              <li><strong>Project URL</strong>: <a href="#">www.github.com/Renata-Thomazelli/amphibians</a></li>
+                          </ul>
+                      </div>
+
+                  </div>
+
+                  <div class="portfolio-description">
+                      <h2>Amphibians Portfolio Detail</h2>
+                      <p>
+                          The dataset is a multilabel classification problem.
+                          The goal is to predict the presence of amphibians species near the water reservoirs based on features obtained from GIS systems and satellite images.
+                          Here I used the Binary Relevance approach because I considered that all class labels are independent of each other. So, the occurrence of one class label does not influence the occurrence of another one.
+                          For this project, I used pandas to manipulate the data, matplotlib and seaborn to build a chart and sklearn to preprocess the data as a MultiLabelBinarizer and skmultilearn building a model with Binary Relevance. During the project we started to understand the data and the categories of the variables then we transformed the variables, built the model, and improved the memory usage. We looked for NAN values and unique values too and transform que category types to binary ones. The Total Hamming Loss of 0,26 and F1 Score of 0,69.
+
+
+                      </p>
+                  </div>
+
+                  <div class="portfolio-details-container" ,style='margin-bottom: -100px'>
+                      <h2 id="ML_LRBS"> Linear Regression Bikes Rental in Seoul</h2>
+
+                      <div class="owl-carousel portfolio-details-carousel" ,style='margin-bottom: +30px'>
+                          <img src="assets/img/amphibians.jpg" class="img-fluid" alt="">
+                          <img src="assets/img/Bar Plot by type of Amphibians.png" class="img-fluid" alt="">
+                          <!--<img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">-->
+                      </div>
+
+                      <div class="portfolio-info" ,style='margin-top: -30px'>
+
+                          <h3>Project information</h3>
+                          <ul>
+                              <li><strong>Category</strong>: Machine Learning MultiLabel Classification Problem</li>
+                              <li><strong>Client</strong>: UC Irvine Machine Learning Repository</li>
+                              <li><strong>Project date</strong>: August, 2023</li>
+                              <li><strong>Project URL</strong>: <a href="#">www.github.com/Renata-Thomazelli/amphibians</a></li>
+                          </ul>
+                      </div>
+
+                  </div>
+
+                  <div class="portfolio-description">
+                      <h2>Amphibians Portfolio Detail</h2>
+                      <p>
+                          The dataset is a multilabel classification problem.
+                          The goal is to predict the presence of amphibians species near the water reservoirs based on features obtained from GIS systems and satellite images.
+                          Here I used the Binary Relevance approach because I considered that all class labels are independent of each other. So, the occurrence of one class label does not influence the occurrence of another one.
+                          For this project, I used pandas to manipulate the data, matplotlib and seaborn to build a chart and sklearn to preprocess the data as a MultiLabelBinarizer and skmultilearn building a model with Binary Relevance. During the project we started to understand the data and the categories of the variables then we transformed the variables, built the model, and improved the memory usage. We looked for NAN values and unique values too and transform que category types to binary ones. The Total Hamming Loss of 0,26 and F1 Score of 0,69.
+
+
+                      </p>
                   </div>
 
               </div>
-
-              <div class="portfolio-description">
-                  <h2>Amphibians Portfolio Detail</h2>
-                  <p>
-                      The dataset is a multilabel classification problem.
-                      The goal is to predict the presence of amphibians species near the water reservoirs based on features obtained from GIS systems and satellite images.
-                      Here I used the Binary Relevance approach because I considered that all class labels are independent of each other. So, the occurrence of one class label does not influence the occurrence of another one.
-                      For this project, I used pandas to manipulate the data, matplotlib and seaborn to build a chart and sklearn to preprocess the data as a MultiLabelBinarizer and skmultilearn building a model with Binary Relevance. During the project we started to understand the data and the categories of the variables then we transformed the variables, built the model, and improved the memory usage. We looked for NAN values and unique values too and transform que category types to binary ones. The Total Hamming Loss of 0,26 and F1 Score of 0,69.
-
-
-                  </p>
-              </div>
-
-          </div>
+      </div>
       </section><!-- End Portfolio Details Section -->
       <!-- ======= Skills Section ======= -->
       <section id="skills" class="skills section-bg">
@@ -305,7 +350,7 @@
                           <p><em>University of Mogi das Cruzes, Sao Paulo, SP</em></p>
                           <!--<p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>-->
                       </div>
-                      
+
                   </div>
                   <div class="col-lg-6" data-aos="fade-up">
                       <h3 class="education-title">Licenses & certifications</h3>
@@ -323,7 +368,6 @@
 
           </div>
       </section><!-- End Education Section -->
-
       <!-- ======= Experiences Section ======= -->
       <section id="experiences" class="experiences">
           <div class="container">
