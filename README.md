@@ -17,9 +17,10 @@ Cada projeto listado aqui é um testemunho do meu compromisso com a excelência 
 
 ## Projetos em Destaque
 
-### Projeto 1: [Nome do Projeto]
+### Projeto 1: A Multilabel Classification of Amphibians
 
-- **Descrição** Um Breve Resumo do Projeto
+- **Descrição** Este dataset foi disponibilizado pela UC Irvine Machine Learning Repository. Os dados são derivados do GIS e de informções do satélite.
+	(TO DO: ler e fazer o resumo para colocar aqui https://archive.ics.uci.edu/dataset/528/amphibians)
 - **Tecnologias** Lista de Tecnologias Usadas. como React, Node.js, Mongo DB
 - **[Link para o Repositório](URL do repositório do projeto)**
 
