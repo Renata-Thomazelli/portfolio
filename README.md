@@ -19,10 +19,21 @@ Cada projeto listado aqui é um testemunho do meu compromisso com a excelência 
 
 ### Projeto 1: A Multilabel Classification of Amphibians
 
-- **Descrição** Este dataset foi disponibilizado pela UC Irvine Machine Learning Repository. Os dados são derivados do GIS e de informções do satélite.
-	(TO DO: ler e fazer o resumo para colocar aqui https://archive.ics.uci.edu/dataset/528/amphibians)
-- **Tecnologias** Lista de Tecnologias Usadas. como React, Node.js, Mongo DB
-- **[Link para o Repositório](URL do repositório do projeto)**
+- **Descrição** Este dataset foi disponibilizado pela UC Irvine Machine Learning Repository. 
+  Dados GIS e Satélite: A pesquisa utilizou dados de GIS e imagens de satélite, além de inventários naturais para avaliar a presença de espécies de anfíbios perto de reservatórios de água.
+  Projetos Rodoviários: Foram analisados os impactos ambientais de dois projetos rodoviários na Polônia, identificando 80 e 109 locais de reprodução de anfíbios, respectivamente.
+  Atributos do Dataset: O conjunto de dados inclui atributos como tamanho da superfície do reservatório de água, número de reservatórios, tipo de vegetação, uso do reservatório e distância para estradas e construções.
+  Objetivo da Classificação: O objetivo é prever a presença de espécies de anfíbios com base nessas características, auxiliando na proteção e no estudo desses animais.
+
+- **Tecnologias** Este projetos foi desenvolvido em Python. Aqui estão as livrarias utilizadas
+		-- math
+		-- pandas
+		-- numpy
+		-- matplotlib
+		-- seaborn
+		-- sklearn
+		-- multiprocessing
+- **[Link para o Repositório](https://github.com/Renata-Thomazelli/amphibians)**
 
 
 ### Projeto 2: [Nome do Projeto]
