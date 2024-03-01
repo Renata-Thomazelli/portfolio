@@ -19,21 +19,25 @@ Cada projeto listado aqui é um testemunho do meu compromisso com a excelência 
 
 ### Projeto 1: A Multilabel Classification of Amphibians
 
-- **Descrição** Este dataset foi disponibilizado pela UC Irvine Machine Learning Repository. 
-  <p> **Dados GIS e Satélite** : A pesquisa utilizou dados de GIS e imagens de satélite, além de inventários naturais para avaliar a presença de espécies de anfíbios perto de reservatórios de água.</p>
-  <p> **Projetos Rodoviários** : Foram analisados os impactos ambientais de dois projetos rodoviários na Polônia, identificando 80 e 109 locais de reprodução de anfíbios, respectivamente.</p>
-  <p> **Atributos do Dataset** : O conjunto de dados inclui atributos como tamanho da superfície do reservatório de água, número de reservatórios, tipo de vegetação, uso do reservatório e distância para estradas e construções.</p>
-  <p> **Objetivo da Classificação** : O objetivo é prever a presença de espécies de anfíbios com base nessas características, auxiliando na proteção e no estudo desses animais.</p>
+-  **Descrição** Este dataset foi disponibilizado pela UC Irvine Machine Learning Repository.
+  
+-  **Dados GIS e Satélite** : A pesquisa utilizou dados de GIS e imagens de satélite, além de inventários naturais para avaliar a presença de espécies de anfíbios perto de reservatórios de água.  
+  
+-  **Projetos Rodoviários** : Foram analisados os impactos ambientais de dois projetos rodoviários na Polônia, identificando 80 e 109 locais de reprodução de anfíbios, respectivamente.
+  
+-  **Atributos do Dataset** : O conjunto de dados inclui atributos como tamanho da superfície do reservatório de água, número de reservatórios, tipo de vegetação, uso do reservatório e distância para estradas e construções.
+  
+-  **Objetivo da Classificação** : O objetivo é prever a presença de espécies de anfíbios com base nessas características, auxiliando na proteção e no estudo desses animais.
 
 - **Tecnologias** Este projetos foi desenvolvido em Python. Aqui estão as livrarias utilizadas
-<ul>
-		<li> math</li>
-		<li> pandas</li>
-		<li> numpy</li>
-		<li> matplotlib</li>
-		<li> seaborn</li>
-		<li> sklearn</li>
-		<li> multiprocessing</li>
+><ul>
+>		<li> math</li>
+>		<li> pandas</li>
+>		<li> numpy</li>
+>		<li> matplotlib</li>
+>		<li> seaborn</li>
+>		<li> sklearn</li>
+>		<li> multiprocessing</li>
 
 - **[Link para o Repositório](https://github.com/Renata-Thomazelli/amphibians)**
 
