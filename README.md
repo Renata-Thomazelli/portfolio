@@ -17,7 +17,8 @@ Cada projeto listado aqui é um testemunho do meu compromisso com a excelência 
 
 ## Projetos em Destaque
 
-### Projeto 1: A Multilabel Classification of Amphibians
+### Projeto 1: A Multilabel Classification of Amphibians 
+<li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen"></li>
 
 -  **Descrição** Este dataset foi disponibilizado pela UC Irvine Machine Learning Repository.
   
@@ -42,18 +43,26 @@ Cada projeto listado aqui é um testemunho do meu compromisso com a excelência 
 - **[Link para o Repositório](https://github.com/Renata-Thomazelli/amphibians)**
 
 
-### Projeto 2: [Nome do Projeto]
+### Projeto 2: Rental Bike in Seoul
+<li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00"</li>
 
-- **Descrição** Um Breve Resumo do Projeto
-- **Tecnologias** Lista de Tecnologias Usadas. como React, Node.js, Mongo DB
-- **[Link para o Repositório](URL do repositório do projeto)**
+- **Descrição** Este dataset foi disponibilizado pela cidade de Seoul e contem informações do tempo e do total de bikes alugadas por hora.
 
+- **Objetivo** O objetivo é construir um modelo preditivo que estime com precisão a contagem de aluguel de bicicletas a cada hora com base nos dados fornecidos. 
 
-### Projeto 3: [Nome do Projeto]
+- **Tecnologias**Este projetos foi desenvolvido em Python. Aqui estão as livrarias utilizadas
+><ul>
+>		<li> pandas</li>
+>		<li> numpy</li>
+>		<li> matplotlib</li>
+>		<li> seaborn</li>
+>		<li> chardet</li>
+>		<li> missingno</li>
+>		<li> sklearn</li>
+</ul>
 
-- **Descrição** Um Breve Resumo do Projeto
-- **Tecnologias** Lista de Tecnologias Usadas. como React, Node.js, Mongo DB
-- **[Link para o Repositório](URL do repositório do projeto)**
+- **[Link para o Repositório](https://github.com/Renata-Thomazelli/seoul_bikes)**
+
 
 
 ## Habilidades 
@@ -65,7 +74,7 @@ Cada projeto listado aqui é um testemunho do meu compromisso com a excelência 
 
 ## Contato
 
-- **LinkedIn**: [Seu LinkedIn](URL do LinkedIn)
+- **LinkedIn**: [Renata Thomazelli](https://www.linkedin.com/in/renatathomazelli/)
 - **Email**: recalesi@outlook.com
 
 
