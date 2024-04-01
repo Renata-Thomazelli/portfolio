@@ -81,6 +81,18 @@
             /* Adicione estilos conforme necessário */
         }
 
+        .meu-link {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .legenda-pequena {
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        
+
     </style>
     <!--==========End of My style to figure==========-->
 </head>
@@ -131,7 +143,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
       <div class="hero-container centered-items" data-aos="fade-in">
-          <h1 style="padding-left: 285px; padding-top: 50px;">Hi, I'm Renata and I'm looking for jobs</h1>
+          <h1 style="padding-left: 100px; padding-top: 50px;">Hi, I'm Renata and I'm looking for jobs</h1>
           <p>of <span class="typed" data-typed-items="Data Analyst, Data Engineer, Python Developer"></span></p>
       </div>
   </section>
@@ -258,37 +270,53 @@
 
                       </ul>
                   </div>
-                  <!--<p><a href="#ML_MCAS"> Multilabel classification with amphibians species.</a></p>-->
-                  <!--<p><a href="#ML_LRBS"> Linear Regression with Bikes in Seoul.</a></p>-->
-
+                                   
+                  <hr class="rounded">
                   <div class="portfolio-details-container">
-                      <h2 id="ML_MCAS"> Amphibians Project</h2>
+                      <h2 id="ML_MCAS"> Case Study Amphibians Multi-Label Classifier</h2>
+                      <b>Introduction</b>
+                      <p>This project aims to identify the presence of amphibians in the vicinity of two road construction sites in Poland. Our objective is to predict the presence of various types of amphibians near these construction sites and assess the environmental impact on these animals.</p>
+
 
                       <div class="owl-carousel portfolio-details-carousel">
+
+                          <img src="assets/img/amphibians/Firefly road construction near some reservoirs, with other reservoirs far and some builts in distanc (5).jpg" class="img-fluid" alt="Road Construction" style="width: 60%;">
+                          <img src="assets/img/amphibians/Firefly a a view from sky of Common newt, Great crested newts, in the respective habitats 2301.jpg" class="img-fluid" alt="Newt" style="width: 60%;" />
+                          <img src="assets/img/amphibians/Firefly a view from sky of Common toads, Fire-bellied toads in the respective habitats. 2301.jpg" style="width:60%" />
+                          <img src="assets/img/amphibians/Firefly a view from the sky of Brown frogs, Green frogs, and Tree frogs in their respective habitats.jpg" style="width:60%" />
+                          
+
                           <figure>
-                              <img src="assets/img/amphibians/amphibians.jpg" class="img-fluid" alt="">
-                              <!--<div class="bottom-left">Bottom Left</div>
-                            <div class="top-left">Top Left</div>
-                            <div class="top-right">Top Right</div>
-                            <div class="bottom-right">Bottom Right</div>
-                            <div class="centered">Centered</div>-->
-                              <figcaption>
-                                  In this project we have the amphibious classified into seven types, are they:
-                                  <ol>
-                                      <li>Brown frogs</li>
-                                      <li>Common newt</li>
-                                      <li>Common toad</li>
-                                      <li>Fire-bellied toad</li>
-                                      <li>Great crested newt</li>
-                                      <li>Green frogs</li>
-                                      <li>Tree frog</li>
-                                  </ol>
+                              <img src="assets/img/amphibians/Fire-Belly-Toad087.jpg" style="width:80%" />
+                              <figcaption class="legenda-pequena">
+                                  font:www.zoomed.com/fire-belly-toad/
                               </figcaption>
                           </figure>
 
                           <figure>
-                              <img src="assets/img/amphibians/Bar Plot by type of Amphibians.png" class="img-fluid" alt="Bar Plot by type of Amphibians">
-                              <figcaption>
+                              <img src="assets/img/amphibians/shutterstock20crested20NO20REQUIRED.jpg" style="width:80%" />
+                              <figcaption class="legenda-pequena">
+                                  font:www.wiltshirewildlife.org/great-crested-newt-ponds
+                              </figcaption>
+                          </figure>
+
+
+                      </div>
+                      <b>Problem Description</b>
+                      <p>The dataset provided by the UC Irvine Machine Learning Repository includes information on buildings, reservoirs, urban or rural areas, reservoir surface characteristics, water reservoir types, the number of reservoirs, minimum distances from buildings and roads, reservoir maintenance status, and shore types.</p>
+                      <p>One of the initial challenges was understanding the different types of amphibians provided in the dataset. As I lack expertise in amphibians, I had to familiarize myself with the fact that the dataset doesn't just include frogs but also various types of frogs, newts, and toads. Additionally, it was important to recognize that each species prefers a specific type of environment.</p>
+                      <p>
+                          Another challenge was comprehending the information in the dataset and understanding the meaning of each feature. Upon closer examination, it was surprising to find discrepancies between the expected values and the actual values provided. For instance, for the variable "TR," we expected values ranging from 'a' to 'j' or from 1 to 10. However, the dataset included different numeric categories such as ‘1’, ‘5’, ‘12’, ‘14’, ‘15’, ‘11’, ‘2’, and ‘7’ for the TR feature, with no accompanying information regarding their meanings. These numbers likely represent internal codes used by the authors of the dataset to denote water types, but without a clear key, it was challenging to interpret their significance. This lack of clarity hindered our ability to explore certain features in more detail.
+                          Such preliminary analysis is crucial before constructing a model.
+                      </p>
+
+
+                      <div class="owl-carousel portfolio-details-carousel">
+                          
+
+                          <figure>
+                              <img src="assets/img/amphibians/Bar Plot by type of Amphibians.png" class="img-fluid" alt="Bar Plot by type of Amphibians" style="width: 70%;" />
+                              <figcaption class="legenda-pequena">
                                   The bar chart provides information about the number of amphibians divided into species indicators during the construction of roads (Road A and Road B) in Poland. Overall, frogs are the most representative amphibians, followed by toads, while the newt is the least representative species indicator.
 
                                   Among frogs, the most common type is the brown frog, with 148 species, representing 45% of all frogs. Additionally, green frogs account for 108, and the remaining three frogs contribute 71, totaling 54% of the frog population.
@@ -302,99 +330,107 @@
                           <img src="assets/img/amphibians/Number of Amphibian's Class by Type of Reservior.png" class="img-fluid" alt="Number of Amphibian's Class by Type of Reservior">
                           <img src="assets/img/amphibians/Number of water reservoirs vs surface of the water reservoir less 20000 - Frogs.png" class="img-fluid" alt="Number of water reservoirs vs surface of the water reservoir less 20000 - Frogs">
 
-                          <img src="assets/img/amphibians/Roc Curve of two types of Amphians on test.png" class="img-fluid" alt="Roc Curve of two types of Amphibians on test">
-                          <img src="assets/img/amphibians/Roc Curve of two types of Amphians on train.png" class="img-fluid" alt="Roc Curve of two types of Amphibians on train">
-                          <!--<img src="assets/img/amphibians/Roc Curve of all types of Amphians on test.png" class="img-fluid" alt="Roc Curve of all types of Amphibians on test">-->
-                          <!--<img src="assets/img/amphibians/Roc Curve of all types of Amphians on train.png" class="img-fluid" alt="Roc Curve of all types of Amphibians on train">-->
-                          <!--<img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">-->
-                      </div>
-
-                      <div class="portfolio-info" ,style='margin-top: -30px'>
-
-                          <h3>Project information</h3>
-                          <ul>
-                              <li><strong>Category</strong>: Machine Learning MultiLabel Classification Problem</li>
-                              <li><strong>Client</strong>: UC Irvine Machine Learning Repository</li>
-                              <li><strong>Project date</strong>: August, 2023</li>
-                              <li><strong>Project URL</strong>: <a href="#">www.github.com/Renata-Thomazelli/amphibians</a></li>
-                              <li><strong>Medium URL</strong>: <a href="#">www.medium.com/@recalesi/a-multi-label-classification-with-machine-learning-dffc986fe885</a></li>
-                          </ul>
-                      </div>
-
-                  </div>
-
-                  <div class="portfolio-description">
-                      <h2>Amphibians Portfolio Detail</h2>
-                      <p>
-                          The dataset represents a multilabel classification problem. Our goal is to predict the presence of amphibian species near water reservoirs based on features obtained from GIS systems and satellite images.
-                      </p>
-
-                      <p> For this project, I employed the Binary Relevance approach, assuming that all class labels are independent of each other. In other words, the occurrence of one class label does not influence the occurrence of another.</p>
-
-                      <p>
-                          During the project, we utilized pandas for data manipulation, matplotlib and seaborn for chart visualization, and sklearn for preprocessing the data using MultiLabelBinarizer. Additionally, we built a model using skmultilearn’s Binary Relevance technique with Random Forest model. Our workflow involved understanding the data, exploring variable categories, transforming variables, and optimizing memory usage. We addressed missing values and unique value considerations, converting categorical types to binary representations.
-                          The model achieved a Total Hamming Loss of 0.25 and an F1 Score of 0.69.
-                          You can see details about this project on my page on the Medium site.
-
-                      </p>
-                  </div>
-                  <hr class="rounded"><!--fixing hr-->
-
-                  <div class="portfolio-details-container">
-                      <h2 id="ML_LRBS"> Linear Regression Bikes Rental in Seoul</h2> <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00">
-
-
-                      <div class="owl-carousel portfolio-details-carousel">
-                          <figure>
-                              <img src="assets/img/bikes_seoul/bikes_seoul.jpg" class="img-fluid" alt="Rental Bikes in Seoul">
-                              <figcaption>
-                                  font:https://10mag.com/seoul-bike-rental/
-                              </figcaption>
-                          </figure>
-
-                          <!--<img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">-->
+                         
                       </div>
 
                       <div>
-                          <iframe title="Report Section" width="900" height="473" src="https://app.powerbi.com/view?r=eyJrIjoiNjhjMDk2ZTktOTZlMS00NDc5LWExMGItMzQzMGY3Y2RmMjUxIiwidCI6IjE0ZjBhYTJhLWE2MGEtNGJhNS05NWFlLWIxOTAzMGVhYzJjNyJ9" frameborder="0" allowFullScreen="true"></iframe>
+                          <b>Methodology</b>
+                          <p>
+                              In our feature engineering process, we performed numerical and categorical transformations and created new features and classifications to aid in the analysis of amphibian types.
+                              Before constructing our model, we visualized relationships and constructed charts to better understand the data.
+                              For this project, we utilized the Binary Relevance scheme with a Random Forest model, assuming that all class labels are independent of each other. We employed pandas for data manipulation, matplotlib and seaborn for data visualization, and sklearn for preprocessing the data using MultiLabelBinarizer. Additionally, we built a model using skmultilearn’s Binary Relevance technique with a Random Forest model. Our workflow involved understanding the data, exploring variable categories, transforming variables, and optimizing memory usage. We addressed missing values and unique value considerations, converting categorical types to binary representations.
+                          </p>
+                          <b>Analysis and Results</b>
+                          <p>
+                              The model achieved a Total Hamming Loss of 0.25 and an F1 Score of 0.69. This result is satisfactory, especially when compared to other schemes such as Label Powerset and Classifier Chain, which achieved 29.76% and 27.38% respectively. Our ROC curve indicates good coverage, with values close to 1.
+                              Thus, the Random Forest with Binary Relevance Scheme demonstrated superior performance for our classification problem.
+                          </p>
+
+                      </div>
+                      <div class="owl-carousel portfolio-details-carousel">
+                          <img src="assets/img/amphibians/Roc Curve of two types of Amphians on test.png" class="img-fluid" alt="Roc Curve of two types of Amphibians on test">
+                          <img src="assets/img/amphibians/Roc Curve of two types of Amphians on train.png" class="img-fluid" alt="Roc Curve of two types of Amphibians on train">
+                      </div>
+                      <div>
+                          <b>Lessons Learned</b>
+                          <p>This project marked my first experience with multilabel classification. As a result, I now feel more comfortable tackling other multilabel classification problems. I am confident that this project has significantly contributed to my knowledge in this area.</p>
+                          <p>You can see details about this project on my page on the Medium site.<a href="https://www.medium.com/@recalesi/a-multi-label-classification-with-machine-learning-dffc986fe885" class="meu-link">Clique aqui</a></p>
+                          
                       </div>
 
 
-                      <div class="portfolio-info" ,style='margin-top: -30px'>
+                          <div class="portfolio-info" ,style='margin-top: -30px'>
 
-                          <h3>Project information</h3>
-                          <ul>
-                              <li><strong>Category</strong>: Linear Regression</li>
-                              <li><strong>Client</strong>: Seoul Bike Sharing System</li>
-                              <li><strong>Project date</strong>: August, 2023</li>
-                              <li><strong>Project URL</strong>: <a href="#">https://github.com/Renata-Thomazelli/seoul_bikes</a></li>
-                          </ul>
+                              <h3>Project information</h3>
+                              <ul>
+                                  <li><strong>Category</strong>: Machine Learning MultiLabel Classification Problem</li>
+                                  <li><strong>Client</strong>: UC Irvine Machine Learning Repository</li>
+                                  <li><strong>Project date</strong>: August, 2023</li>
+                                  <li><strong>Project URL</strong>: <a href="#">www.github.com/Renata-Thomazelli/amphibians</a></li>
+                                  <li><strong>Medium URL</strong>: <a href="#">www.medium.com/@recalesi/a-multi-label-classification-with-machine-learning-dffc986fe885</a></li>
+                              </ul>
+                          </div>
+
                       </div>
 
+                      
+                      <hr class="rounded"><!--fixing hr-->
+
+                      <div class="portfolio-details-container">
+                          <h2 id="ML_LRBS"> Linear Regression Bikes Rental in Seoul</h2> <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00">
+
+
+                          <div class="owl-carousel portfolio-details-carousel">
+                              <figure>
+                                  <img src="assets/img/bikes_seoul/bikes_seoul.jpg" class="img-fluid" alt="Rental Bikes in Seoul">
+                                  <figcaption>
+                                      font:https://10mag.com/seoul-bike-rental/
+                                  </figcaption>
+                              </figure>
+
+                              <!--<img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">-->
+                          </div>
+
+                          <div>
+                              <iframe title="Report Section" width="900" height="473" src="https://app.powerbi.com/view?r=eyJrIjoiNjhjMDk2ZTktOTZlMS00NDc5LWExMGItMzQzMGY3Y2RmMjUxIiwidCI6IjE0ZjBhYTJhLWE2MGEtNGJhNS05NWFlLWIxOTAzMGVhYzJjNyJ9" frameborder="0" allowFullScreen="true"></iframe>
+                          </div>
+
+
+                          <div class="portfolio-info" ,style='margin-top: -30px'>
+
+                              <h3>Project information</h3>
+                              <ul>
+                                  <li><strong>Category</strong>: Linear Regression</li>
+                                  <li><strong>Client</strong>: Seoul Bike Sharing System</li>
+                                  <li><strong>Project date</strong>: April, 2024</li>
+                                  <li><strong>Project URL</strong>: <a href="#">https://github.com/Renata-Thomazelli/seoul_bikes</a></li>
+                              </ul>
+                          </div>
+
+                      </div>
+
+                      <div class="portfolio-description">
+                          <h2>Rental Bikes Portfolio Detail</h2>
+
+                          <p>
+                              Bike-sharing systems have become an essential part of urban transportation. Accurate predictions of bike rental demand can help optimize fleet management,
+                              improve user experience, and ensure a stable supply of rental bikes.
+                          </p>
+
+                          <p>
+                              Our dataset comprises hourly records, including weather data (temperature, humidity, etc.)
+                              and the total number of bikes rented. Each observation represents a specific hour of the day.
+                          </p>
+                          <p>
+                              Our goal is to build a predictive model that accurately estimates the bike rental count for each hour based on various factors.
+                              This project is not finished yet. What you will see on my GitHub page is a work-in-progress.
+                          </p>
+                      </div>
+
+
+
+
                   </div>
-
-                  <div class="portfolio-description">
-                      <h2>Rental Bikes Portfolio Detail</h2>
-
-                      <p>
-                          Bike-sharing systems have become an essential part of urban transportation. Accurate predictions of bike rental demand can help optimize fleet management,
-                          improve user experience, and ensure a stable supply of rental bikes.
-                      </p>
-
-                      <p>
-                          Our dataset comprises hourly records, including weather data (temperature, humidity, etc.)
-                          and the total number of bikes rented. Each observation represents a specific hour of the day.
-                      </p>
-                      <p>
-                          Our goal is to build a predictive model that accurately estimates the bike rental count for each hour based on various factors.
-                          This project is not finished yet. What you will see on my GitHub page is a work-in-progress.
-                      </p>
-                  </div>
-
-
-
-
-              </div>
       </div>
       </section><!-- End Portfolio Details Section -->
       <!-- ======= Skills Section ======= -->
