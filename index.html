@@ -91,6 +91,14 @@
             font-style: italic;
         }
 
+
+        .separator {
+            height: 20px; /* Altura da div separadora */
+        }
+
+        p {
+            text-align: justify;
+        }
         
 
     </style>
@@ -407,11 +415,53 @@
                           </div>
 
                           <div>
+                              <h3>Data analyzed with Power BI</h3>
                               <iframe title="Report Section" width="900" height="473" src="https://app.powerbi.com/view?r=eyJrIjoiNjhjMDk2ZTktOTZlMS00NDc5LWExMGItMzQzMGY3Y2RmMjUxIiwidCI6IjE0ZjBhYTJhLWE2MGEtNGJhNS05NWFlLWIxOTAzMGVhYzJjNyJ9" frameborder="0" allowFullScreen="true"></iframe>
                           </div>
-
+                          
+                          <div class="separator"></div>
 
                           <div class="portfolio-info" ,style='margin-top: -30px'>
+                              <h3>A little introduction to show you the Web Application in action</h3>
+
+
+                              <div style="text-align:left">
+                                  <button onclick="playPause()">Play/Pause</button>
+                                  <button onclick="makeBig()">Big</button>
+                                  <button onclick="makeSmall()">Small</button>
+                                  <button onclick="makeNormal()">Normal</button>
+                                  <br><br>
+                                  <video id="video1" width="820">
+                                      <source src="assets/video/WebApplicationwithflask_Apresentation.mp4" type="video/mp4">
+
+                                      Your browser does not support the video tag.
+                                  </video>
+                                  <p>To achieve this, I used Linear Regression. The user inputs data about the calendar, weather, and hour, and. The trained model processes this information to estimate the number of bikes available.</p>
+
+                              </div>
+                              <script>
+                                  var myVideo = document.getElementById("video1");
+
+                                  function playPause() {
+                                      if (myVideo.paused)
+                                          myVideo.play();
+                                      else
+                                          myVideo.pause();
+                                  }
+
+                                  function makeBig() {
+                                      myVideo.width = 920;
+                                  }
+
+                                  function makeSmall() {
+                                      myVideo.width = 320;
+                                  }
+
+                                  function makeNormal() {
+                                      myVideo.width = 720;
+                                  }
+                              </script>
+
 
                               <h3>Project information</h3>
                               <ul>
