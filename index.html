@@ -400,7 +400,25 @@
                       <hr class="rounded"><!--fixing hr-->
 
                       <div class="portfolio-details-container">
-                          <h2 id="ML_LRBS"> Linear Regression Bikes Rental in Seoul</h2> <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00">
+                          
+                          <div class="portfolio-description">
+                              <h2 id="ML_LRBS"> Case Study Rental Bikes in Seoul a Linear Regression <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00" /></h2> 
+                              
+                              <b>Introduction</b>
+                              <p>
+                                  Bike-sharing systems have become an essential part of urban transportation. Accurate predictions of bike rental demand can help optimize fleet management,
+                                  improve user experience, and ensure a stable supply of rental bikes.
+                              </p>
+
+                              <p>
+                                  Our dataset comprises hourly records, including weather data (temperature, humidity, etc.)
+                                  and the total number of bikes rented. Each observation represents a specific hour of the day.
+                              </p>
+                              <p>
+                                  Our goal is to build a predictive model that accurately estimates the bike rental count for each hour based on various factors.
+                                  This project is not finished yet. What you will see on my GitHub page is a work-in-progress.
+                              </p>
+                          </div>
 
 
                           <div class="owl-carousel portfolio-details-carousel">
@@ -417,118 +435,107 @@
                           <div>
                               <h3>Data analyzed with Power BI</h3>
                               <iframe title="Report Section" width="900" height="473" src="https://app.powerbi.com/view?r=eyJrIjoiNjhjMDk2ZTktOTZlMS00NDc5LWExMGItMzQzMGY3Y2RmMjUxIiwidCI6IjE0ZjBhYTJhLWE2MGEtNGJhNS05NWFlLWIxOTAzMGVhYzJjNyJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+                              <div class="separator"></div>
+                              <h3>Data analyzed with Matplotlib and Seaborn</h3>
+                              <div class="owl-carousel portfolio-details-carousel">
+                                  <img src="assets/img/bikes_seoul/Total Rented Bikes by Month and Year.png" class="img-fluid" alt="Total Rented Bikes by Month and Year" />
+                                  <img src="assets/img/bikes_seoul/Total Bikes Rented by Season.png" class="img-fluid" alt="Total Bikes Rented by Season" />
+                              </div>
+                              <div class="separator"></div>
+
+                              <div>
+                                  <h3>The Machine Learning' Models Plots</h3>
+                                  <div class="owl-carousel portfolio-details-carousel">
+                                      <figure>
+                                          <img src="assets/img/bikes_seoul/ForwardLinearRegression.jpg" class="img-fluid" alt="Forward Linear Regresson">
+                                          <figcaption>
+                                              A Forward Linear Regression Plot by Month
+                                          </figcaption>
+
+                                      </figure>
+
+                                      <!--<img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">-->
+                                  </div>
+                              </div>
+
+
+
+                              <div class="separator"></div>
+
+                              <div class="portfolio-info" ,style='margin-top: -30px'>
+                                  <h3>A little introduction to show you the Web Application in action</h3>
+
+
+                                  <div style="text-align:left">
+                                      <button onclick="playPause()">Play/Pause</button>
+                                      <button onclick="makeBig()">Big</button>
+                                      <button onclick="makeSmall()">Small</button>
+                                      <button onclick="makeNormal()">Normal</button>
+                                      <br><br>
+                                      <video id="video1" width="820">
+                                          <source src="assets/video/WebApplicationwithflask_Apresentation.mp4" type="video/mp4">
+
+                                          Your browser does not support the video tag.
+                                      </video>
+                                      <p>To achieve this, I used Linear Regression. The user inputs data about the calendar, weather, and hour, and. The trained model processes this information to estimate the number of bikes available.</p>
+
+                                  </div>
+                                  <script>
+                                      var myVideo = document.getElementById("video1");
+
+                                      function playPause() {
+                                          if (myVideo.paused)
+                                              myVideo.play();
+                                          else
+                                              myVideo.pause();
+                                      }
+
+                                      function makeBig() {
+                                          myVideo.width = 920;
+                                      }
+
+                                      function makeSmall() {
+                                          myVideo.width = 320;
+                                      }
+
+                                      function makeNormal() {
+                                          myVideo.width = 720;
+                                      }
+                                  </script>
+
+
+                                  <h3>Project information</h3>
+                                  <ul>
+                                      <li><strong>Category</strong>: Linear Regression</li>
+                                      <li><strong>Client</strong>: Seoul Bike Sharing System</li>
+                                      <li><strong>Project date</strong>: April, 2024</li>
+                                      <li><strong>Project URL</strong>: <a href="#">https://github.com/Renata-Thomazelli/seoul_bikes</a></li>
+                                  </ul>
+                              </div>
+
                           </div>
-                          <div class="separator"></div>
-
-                          <div>
-                              <h3>The Machine Learning' Models Plots</h3>
-                          <div class="owl-carousel portfolio-details-carousel">
-                              <figure>
-                                  <img src="assets/img/bikes_seoul/ForwardLinearRegression.jpg" class="img-fluid" alt="Forward Linear Regresson">
-                                  <figcaption>
-                                      A Forward Linear Regression Plot by Month
-                                  </figcaption>
-
-                              </figure>
-
-                              <!--<img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">-->
-                          </div>
-                          </div>
 
 
+                          <hr class="rounded"><!--fixing hr-->
 
-                          <div class="separator"></div>
-
-                          <div class="portfolio-info" ,style='margin-top: -30px'>
-                              <h3>A little introduction to show you the Web Application in action</h3>
+                          <div class="portfolio-details-container">
+                              <h2 id="ML_REGCOM"> Commodities Agrículas Inteligentes</h2> <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen">
 
 
-                              <div style="text-align:left">
-                                  <button onclick="playPause()">Play/Pause</button>
-                                  <button onclick="makeBig()">Big</button>
-                                  <button onclick="makeSmall()">Small</button>
-                                  <button onclick="makeNormal()">Normal</button>
-                                  <br><br>
-                                  <video id="video1" width="820">
-                                      <source src="assets/video/WebApplicationwithflask_Apresentation.mp4" type="video/mp4">
-
-                                      Your browser does not support the video tag.
-                                  </video>
-                                  <p>To achieve this, I used Linear Regression. The user inputs data about the calendar, weather, and hour, and. The trained model processes this information to estimate the number of bikes available.</p>
+                              <div class="owl-carousel portfolio-details-carousel">
+                                  <div>
+                                      <iframe title="Report Section" width="900" height="473" src="https://commoditiesagricolasinteligentes.github.io/index/" frameborder="0" allowFullScreen="true"></iframe>
+                                  </div>
 
                               </div>
-                              <script>
-                                  var myVideo = document.getElementById("video1");
-
-                                  function playPause() {
-                                      if (myVideo.paused)
-                                          myVideo.play();
-                                      else
-                                          myVideo.pause();
-                                  }
-
-                                  function makeBig() {
-                                      myVideo.width = 920;
-                                  }
-
-                                  function makeSmall() {
-                                      myVideo.width = 320;
-                                  }
-
-                                  function makeNormal() {
-                                      myVideo.width = 720;
-                                  }
-                              </script>
 
 
-                              <h3>Project information</h3>
-                              <ul>
-                                  <li><strong>Category</strong>: Linear Regression</li>
-                                  <li><strong>Client</strong>: Seoul Bike Sharing System</li>
-                                  <li><strong>Project date</strong>: April, 2024</li>
-                                  <li><strong>Project URL</strong>: <a href="#">https://github.com/Renata-Thomazelli/seoul_bikes</a></li>
-                              </ul>
+
+
+
                           </div>
-
                       </div>
-
-                      <div class="portfolio-description">
-                          <h2>Rental Bikes Portfolio Detail</h2>
-
-                          <p>
-                              Bike-sharing systems have become an essential part of urban transportation. Accurate predictions of bike rental demand can help optimize fleet management,
-                              improve user experience, and ensure a stable supply of rental bikes.
-                          </p>
-
-                          <p>
-                              Our dataset comprises hourly records, including weather data (temperature, humidity, etc.)
-                              and the total number of bikes rented. Each observation represents a specific hour of the day.
-                          </p>
-                          <p>
-                              Our goal is to build a predictive model that accurately estimates the bike rental count for each hour based on various factors.
-                              This project is not finished yet. What you will see on my GitHub page is a work-in-progress.
-                          </p>
-                      </div>
-
-                  <hr class="rounded"><!--fixing hr-->
-
-                      <div class="portfolio-details-container">
-                          <h2 id="ML_REGCOM"> Commodities Agrículas Inteligentes</h2> <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen">
-
-
-                          <div class="owl-carousel portfolio-details-carousel">
-                              <div>
-                                  <iframe title="Report Section" width="900" height="473" src="https://commoditiesagricolasinteligentes.github.io/index/" frameborder="0" allowFullScreen="true"></iframe>
-                              </div>   
-                              
-                          </div>
-
-
-
-
-
-                  </div>
-      </div>
       </section><!-- End Portfolio Details Section -->
       <!-- ======= Skills Section ======= -->
       <section id="skills" class="skills section-bg">
