@@ -99,7 +99,81 @@
         p {
             text-align: justify;
         }
+
+
+        .nav-menu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+        }
+
+            .nav-menu ul li {
+                    position: relative;
+            }
+
+                .nav-menu ul li.has-submenu .submenu {
+                        display: none;
+                        position: absolute;
+                        left: 100%;
+                        top: 0;
+                        background: #fff;
+                        padding: 0;
+                        margin: 0;
+                }
+
+                .nav-menu ul li.has-submenu:hover .submenu {
+                        display: block;
+                }
+
+                .nav-menu ul li.has-submenu .submenu li {
+                        padding-left: 30px; /* Ajuste o valor conforme necessário */
+                }
+
+        .separator {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 20px;
+        }
+
+            .separator::before {
+                content: "🚩"; /* Bandeira vermelha */
+                color: red;
+            }
+
+        .separator-down {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 20px;
+        }
+
+            .separator-down::before {
+                content: "⬇️"; /* Seta para baixo */
+                color: #007bff; /* Azul padrão */
+            }
+
+        .video-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* espaço entre os vídeos */
+            padding: 30px 0;
+        }
+
+        .video-container {
+            background-color: #f4f4f4;
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 420px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-container:hover {
+                transform: scale(1.02);
+        }
         
+
 
     </style>
     <!--==========End of My style to figure==========-->
@@ -124,8 +198,8 @@
             <!--<a href="https://www.kaggle.com/renatathomazelli" class="kaggle"><i class="bx bxl-kaggle"></i></a>-->
             <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
             <a href="https://www.linkedin.com/in/renatathomazelli/" class="linkedin"><i class="bx bxl-linkedin" title="LinkedIn"></i></a>
-            <a href="downloads/Renata Thomazelli_Python Developer.pdf" download="Download the resume" class="download"><i class="bx bx-download" title="Resume in English"></i></a>
-            <a href="downloads/Renata Thomazelli Desenvolvedora Python Currículo.pdf" download="Download the resume" class="download"><i class="bx bx-download" title="Currículo em Português"></i></a> </a>
+            <a href="downloads/Renata Thomazelli_en_resume_en.pdf" download="Download the resume" class="download"><i class="bx bx-download" title="Resume in English"></i></a>
+            <a href="downloads/Renata Thomazelli_pt_resume_pt.pdf" download="Download the resume" class="download"><i class="bx bx-download" title="Currículo em Português"></i></a> </a>
 
 
             
@@ -136,7 +210,16 @@
           <ul>
               <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
               <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-              <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
+              <!--<li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>-->
+              <li class="has-submenu">
+                  <a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a>
+                  <ul class="submenu">
+                      <li><a href="#ML_MCAS">A Multilabel Classification</a></li>
+                      <li><a href="#ML_LRBS">A Linear Regression</a></li>
+                      <li><a href="#OPMSRWMF">FabricFlow: A Python & PySpark Pipeline</a></li>
+                      <li><a href="#CLUS_ANAL">A Clusterization Project</a></li>
+                  </ul>
+              </li>
               <li><a href="#skills"><i class="bx bx-user"></i> <span>Skills</span></a></li>
               <li><a href="#education"><i class="bx bx-file-blank"></i> <span>Education</span></a></li>
               <li><a href="#experiences"><i class="bx bx-file-blank"></i> <span>Experience</span></a></li>
@@ -249,49 +332,77 @@
                       If you are interested in seeing more you can access my GitHub portfolio at the links below.
                   </p>
                   <div class="col-lg-6">
-                      <ul>
+                      <section>
                           <h6><b>Individual Projects</b></h6>
-                          <il>
+                          <ul>
+                              <li>
+                                  <b>Machine Learning projects with Python</b>
+                                  <ul>
+                                      <li>
+                                          <img alt="Status" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen">
+                                          <a href="#ML_MCAS">Multilabel classification with amphibians species.</a>
+                                      </li>
+                                      <li>
+                                          <img alt="Status" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00">
+                                          <a href="#ML_LRBS">Linear Regression with Bikes in Seoul.</a>
+                                      </li>
+                                  </ul>
+                              </li>
 
-                              <b>Machine Learning projects in Python</b>
-                              <ul>
-                                  <!--<li><i class="icofont-rounded-right"></i> <strong>Aniversário:</strong> sua data de nascimento</li>-->
-                                  <li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen"><a href="#ML_MCAS"> Multilabel classification with amphibians species.</a></li>
-                                  <li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00"><a href="#ML_LRBS"> Linear Regression with Bikes in Seoul.</a></li>
+                              
+                              <li>
+                                  <b>Power BI Projects</b>
+                                  <ul>
+                                      <li>
+                                          <img alt="Status" src="https://img.shields.io/badge/STATUS-COMING%20SOON-black">
+                                          <a href="#ML_LRBS">Linear Regression with Bikes in Seoul</a>
+                                      </li>
+                                      <li>
+                                          <img alt="Status" src="https://img.shields.io/badge/STATUS-COMING%20SOON-black">
+                                          <a href="#PBI_AMPHIB">Analysis of the Amphibians Project</a>
+                                      </li>
+                                  </ul>
+                              </li>
 
-                                  <!--<li><i class="icofont-rounded-right"></i> <strong>City:</strong> Sao Paulo</li>-->
-                                  <!--<li><i class="icofont-rounded-right"></i> <strong>Github:</strong> link do seu github</li>-->
-                              </ul>
-                          </il>
+                              <li>
+                                  <b>Microsoft Fabric Projects</b>
+                                  <ul>
+                                      <li>
+                                          <b>Optimizing My Study Routine with Microsoft Fabric</b>
+                                          <img alt="Status" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00">
+                                          <a href="#OPMSRWMF">A Data-Driven Journey to Mastering Time Management</a>
+                                      </li>
 
-                          <il>
-                              <b>Power BI Projects</b>
-                              <ul>
+                                      <li>
+                                          <b>Clusterization Analysis with PySpark</b>
+                                          <img alt="Status" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen">
+                                          <a href="#CLUS_ANAL">Clusterization Analysis in Microsoft Fabric</a>
+                                           
+                                          
+                                      </li>
 
-                                  <!--<li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00"><a href="#PBI_ADVW"> A Dashboard to Adventure Works.</a></li>-->
+                                  </ul>
 
+                                  
 
-                                  <li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-COMING%20SOON-black"><a href="#ML_LRBS"> Linear Regression with Bikes in Seoul.</a></li>
-                                  <li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-COMING%20SOON-black"><a href="#PBI_AMPHIB"> Analysis of the Amphibians Project.</a></li>
-                                  <!--<li><i class="icofont-rounded-right"></i> <strong>City:</strong> Sao Paulo</li>-->
-                                  <!--<li><i class="icofont-rounded-right"></i> <strong>Github:</strong> link do seu github</li>-->
-                              </ul>
-                          </il>
+                              </li>
+                          </ul>
+                      </section>
 
-                      </ul>
-
-                      <ul>
+                      <section>
                           <h6><b>Group Projects</b></h6>
-                          <il>
-
-                              <b>Commodities Agrícolas Inteligentes</b>
-                              <ul>
-
-                                  <li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen"><a href="#ML_REGCOM"> Linear regression with wheat commodity .</a></li> -This project is in Brazilian Portuguese
-
-
-                              </ul>
-                          </il>
+                          <ul>
+                              <li>
+                                  <b>Commodities Agrícolas Inteligentes</b>
+                                  <ul>
+                                      <li>
+                                          <img alt="Status" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen">
+                                          <a href="#ML_REGCOM">Linear regression with wheat commodity.</a> - Este projeto está em português.
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </section>
                   </div>
                                    
                   <hr class="rounded">
@@ -396,7 +507,7 @@
 
                       </div>
 
-                      
+                  <div class="separator"></div>
                       <hr class="rounded"><!--fixing hr-->
 
                       <div class="portfolio-details-container">
@@ -436,7 +547,7 @@
                               <h3><b>Data analyzed with Power BI</b></h3>
                               <iframe title="Report Section" width="900" height="473" src="https://app.powerbi.com/view?r=eyJrIjoiNjhjMDk2ZTktOTZlMS00NDc5LWExMGItMzQzMGY3Y2RmMjUxIiwidCI6IjE0ZjBhYTJhLWE2MGEtNGJhNS05NWFlLWIxOTAzMGVhYzJjNyJ9" frameborder="0" allowFullScreen="true"></iframe>
 
-                              <div class="separator"></div>
+                              <div class="separator-down"></div>
                               <h3><b>Data analyzed with Matplotlib and Seaborn</b></h3>
                               <div class="owl-carousel portfolio-details-carousel">
                                   <img src="assets/img/bikes_seoul/Total Rented Bikes by Month and Year.png" class="img-fluid" alt="Total Rented Bikes by Month and Year" />
@@ -444,12 +555,12 @@
 
                               </div>
 
-                              <div class="separator"></div>
+                              <div class="separator-down"></div>
                               <div>
                                   <img src="assets/img/bikes_seoul/Glancing at each categorical feature distribution.png" class="img-fluid" alt="Glacing at each categorical feature distribution" />
                               </div>
 
-                              <div class="separator"></div>
+                              <div class="separator-down"></div>
                               <h3><b>Looking for Outliers</b></h3>
                               <div class="owl-carousel portfolio-details-carousel">
                                   <img src="assets/img/bikes_seoul/Humidity Box Plot.png" class="img-fluid" alt="Humidity Box Plot" />
@@ -460,7 +571,7 @@
                                   <img src="assets/img/bikes_seoul/Visibility Box Plot.png" class="img-fluid" alt="Visibility Box Plot" />
                                   <img src="assets/img/bikes_seoul/Wind Speed Box Plot.png" class="img-fluid" alt="Wind Speed Box Plot" />
                               </div>
-                                 
+
 
 
                               <div>
@@ -530,81 +641,292 @@
 
 
 
-                                  <div class="separator"></div>
+                              <div class="separator-down"></div>
 
-                                  <div class="portfolio-info" ,style='margin-top: -30px'>
-                                      <h3><b>A little introduction to show you the Web Application in action</b></h3>
-
-
-                                      <div style="text-align:left">
-                                          <button onclick="playPause()">Play/Pause</button>
-                                          <button onclick="makeBig()">Big</button>
-                                          <button onclick="makeSmall()">Small</button>
-                                          <button onclick="makeNormal()">Normal</button>
-                                          <br><br>
-                                          <video id="video1" width="820">
-                                              <source src="assets/video/WebApplicationwithflask_Apresentation.mp4" type="video/mp4">
-
-                                              Your browser does not support the video tag.
-                                          </video>
-                                          <p>To achieve this, I used Linear Regression. The user inputs data about the calendar, weather, and hour, and. The trained model processes this information to estimate the number of bikes available.</p>
-
-                                      </div>
-                                      <script>
-                                          var myVideo = document.getElementById("video1");
-
-                                          function playPause() {
-                                              if (myVideo.paused)
-                                                  myVideo.play();
-                                              else
-                                                  myVideo.pause();
-                                          }
-
-                                          function makeBig() {
-                                              myVideo.width = 920;
-                                          }
-
-                                          function makeSmall() {
-                                              myVideo.width = 320;
-                                          }
-
-                                          function makeNormal() {
-                                              myVideo.width = 720;
-                                          }
-                                      </script>
+                              <div class="portfolio-info" ,style='margin-top: -30px'>
+                                  <h3><b>A little introduction to show you the Web Application in action</b></h3>
 
 
-                                      <h3>Project information</h3>
-                                      <ul>
-                                          <li><strong>Category</strong>: Linear Regression</li>
-                                          <li><strong>Client</strong>: Seoul Bike Sharing System</li>
-                                          <li><strong>Project date</strong>: April, 2024</li>
-                                          <li><strong>Project URL</strong>: <a href="#">https://github.com/Renata-Thomazelli/seoul_bikes</a></li>
-                                      </ul>
+                                  <div style="text-align:left">
+                                      <button onclick="playPause()">Play/Pause</button>
+                                      <button onclick="makeBig()">Big</button>
+                                      <button onclick="makeSmall()">Small</button>
+                                      <button onclick="makeNormal()">Normal</button>
+                                      <br><br>
+                                      <video id="video1" width="820">
+                                          <source src="assets/video/WebApplicationwithflask_Apresentation.mp4" type="video/mp4">
+
+                                          Your browser does not support the video tag.
+                                      </video>
+                                      <p>To achieve this, I used Linear Regression. The user inputs data about the calendar, weather, and hour, and. The trained model processes this information to estimate the number of bikes available.</p>
+
                                   </div>
+                                  <script>
+                                      var myVideo = document.getElementById("video1");
 
+                                      function playPause() {
+                                          if (myVideo.paused)
+                                              myVideo.play();
+                                          else
+                                              myVideo.pause();
+                                      }
+
+                                      function makeBig() {
+                                          myVideo.width = 920;
+                                      }
+
+                                      function makeSmall() {
+                                          myVideo.width = 320;
+                                      }
+
+                                      function makeNormal() {
+                                          myVideo.width = 720;
+                                      }
+                                  </script>
+
+
+                                  <h3>Project information</h3>
+                                  <ul>
+                                      <li><strong>Category</strong>: Linear Regression</li>
+                                      <li><strong>Client</strong>: Seoul Bike Sharing System</li>
+                                      <li><strong>Project date</strong>: April, 2024</li>
+                                      <li><strong>Project URL</strong>: <a href="#">https://github.com/Renata-Thomazelli/seoul_bikes</a></li>
+                                  </ul>
                               </div>
 
-
+                              <div class="separator"></div>
                               <hr class="rounded"><!--fixing hr-->
 
-                              <div class="portfolio-details-container">
-                                  <h2 id="ML_REGCOM"> Commodities Agrículas Inteligentes</h2> <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen">
+                              <div class="portfolio-description">
+
+                                  <div class="portfolio-description">
+                                      <h2 id="OPMSRWMF">
+                                          A Data-Driven Journey to Mastering Time Management
+                                          <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00">
+                                      </h2>
+
+                                      <section>
+                                          <h2>🧠 Case Study: A Data-Driven Journey to Mastering Time Management</h2>
+                                          <h3>How I Turned My Study Routine into a Personal Analytics Project Using Microsoft Fabric and Power BI</h3>
+
+                                          <h4>Background</h4>
+                                          <p>During my postgraduate studies in Data Science, I found myself overwhelmed by complex subjects like mathematics and statistics. I realized that my biggest challenge wasn’t just the content—it was the way I was managing my time. I wasn’t studying efficiently, and I needed a smarter approach.</p>
+
+                                          <h4>The Challenge</h4>
+                                          <p>Like many learners, I struggled with distractions and an uneven study schedule. Traditional calendars and to-do lists weren’t cutting it. I wanted more than reminders—I wanted real insights into <em>how</em> I was spending my time and whether I was allocating it wisely across subjects.</p>
+
+                                          <h4>The Solution</h4>
+                                          <ul>
+                                              <li>Applied <strong>Pomodoro</strong> and <strong>Timeboxing</strong> techniques to improve focus.</li>
+                                              <li>Retrieved calendar event data using <strong>Microsoft Graph API</strong> connected to my business account for secure access.</li>
+                                              <li>Processed the data using <strong>Python</strong> and <strong>PySpark</strong> in Microsoft Fabric Notebooks.</li>
+                                              <li>Organized the data into a <strong>medallion architecture</strong> with Bronze, Silver, and Gold layers.</li>
+                                              <li>Cleaned and transformed data with <strong>Power Query</strong> and built semantic models.</li>
+                                              <li>Queried the information with <strong>SQL Analytics Endpoint</strong> and visualized everything in <strong>Power BI dashboards</strong>.</li>
+                                          </ul>
+
+                                          <h4>What I Gained</h4>
+                                          <ul>
+                                              <li>A clear understanding of how I spent my study time.</li>
+                                              <li>Insight into where I faced the most doubts or needed extra help.</li>
+                                              <li>A reusable framework for tracking productivity and learning progress.</li>
+                                              <li>Hands-on mastery of <strong>Microsoft Fabric</strong> and <strong>Power BI</strong>, demonstrated in a real-world use case.</li>
+                                          </ul>
+
+                                          <h4>The Outcome</h4>
+                                          <p>By transforming my personal challenge into a professional project, I not only optimized my study routine but also created a powerful portfolio piece. It’s a practical example of how data can improve everyday life—and how technology can support continuous learning.</p>
+                                      </section>
+
+                                      <section>
+                                          <h2>🎓 Video Series: Managing My Time with Microsoft Fabric & Power BI</h2>
+                                          <p>This video series documents the technical journey I undertook to optimize my study schedule through data engineering and visualization tools. Each video highlights a unique stage of my process.</p>
+
+                                          <div class="video-summary">
+                                              <h3>📘 Video 1: Retrieving Calendar Data with Microsoft Graph</h3>
+                                              <p>I used Microsoft Graph and Graph Explorer to access calendar data from Outlook. Queries were refined using Postman, ensuring correct time zone settings. The results were saved as a JSON file and uploaded to a Lakehouse in Microsoft Fabric.</p>
+                                              <iframe width="560" height="315"
+                                                      src="https://www.youtube.com/embed/Z4ffVTTuTz8?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
+                                                      title="Video 1 - Retrieving Calendar Data with Microsoft Graph"
+                                                      frameborder="0"
+                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                      allowfullscreen>
+                                              </iframe>
+
+                                          </div>
+
+                                          <div class="video-summary">
+                                              <h3>📘 Video 2: Data Organization and Layering in Microsoft Fabric</h3>
+                                              <p>I introduced my data workspace and structured raw calendar data using Bronze, Silver, and Gold layers. I developed a function to clean and transform data, applied basic feature engineering, and converted a DataFrame to JSON for use in PySpark.</p>
+                                          
+                                               <iframe width="560" height="315"
+                                                       src="https://www.youtube.com/embed/4fPXRHMc-fM?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
+                                                       title="Video 2 - Organizing Data and Applying Medallion Architecture"
+                                                       frameborder="0"
+                                                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                       allowfullscreen>
+                                               </iframe>
+                                          </div>
+
+                                          <div class="video-summary">
+                                              <h3>📘 Video 3: Structuring Data with PySpark</h3>
+                                              <p>Defined a schema and created a PySpark table with key event data. Performed transformations and validated the dataset—then saved the output to the Silver layer and prepared it for enhancement in the Gold layer.</p>
+                                              <iframe width="560" height="315"
+                                                      src="https://www.youtube.com/embed/j6R0C-LOkDk?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
+                                                      title="Video 3 - Creating and Transforming PySpark Tables"
+                                                      frameborder="0"
+                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                      allowfullscreen>
+                                              </iframe>
+                                            </div>
+
+                                          <div class="video-summary">
+                                              <h3>📘 Video 4: Data Extraction and Category Analysis</h3>
+                                              <p>Extracted large datasets using a PySpark notebook. Created new columns and performed category-based analysis to uncover insights on time usage, calendar events, and data patterns.</p>
+                                              <iframe width="560" height="315"
+                                                      src="https://www.youtube.com/embed/reCGpK6Ykyo?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
+                                                      title="Video 4 - Handling Large Datasets with PySpark"
+                                                      frameborder="0"
+                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                      allowfullscreen>
+                                              </iframe>
+                                          </div>
+
+                                          <div class="video-summary">
+                                              <h3>📘 Video 5: Building Efficient Calendars for Study and Learning</h3>
+                                              <p>Transitioned from a unified calendar to separate ones focused on studying and learning English. Uploaded JSON files, processed them using PySpark, and refined the setup with a clean, three-step method—later combining the tables in Power Query.</p>
+                                              <iframe width="560" height="315"
+                                                      src="https://www.youtube.com/embed/TIpd3uBozsE?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
+                                                      title="Video 5 - Refining Calendar Structures and Timeboxing"
+                                                      frameborder="0"
+                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                      allowfullscreen>
+                                              </iframe>
+                                          </div>
+
+                                          <div class="video-summary">
+                                              <h3>📘 Video 6: SQL Analysis and Power Query Deep Dive</h3>
+                                              <p>Started with SQL analysis in Microsoft Fabric and moved into Power Query transformations. I selected relevant columns, generated new ones, and validated the transformation logic for calendar event data.</p>
+                                              <iframe width="560" height="315"
+                                                      src="https://www.youtube.com/embed/AMrzCQ31ZMA?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
+                                                      title="Video 6 - Analyzing and Transforming Calendar Data"
+                                                      frameborder="0"
+                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                      allowfullscreen>
+                                              </iframe>
+                                          </div>
+
+                                          <div class="video-summary">
+                                              <h3>📘 Video 7: Advanced Transformations with Dataflow Gen2</h3>
+                                              <p>Performed detailed transformations using Dataflow Gen2—changing column types, extracting strings, filtering rows, renaming fields, and building targeted datasets for Power BI dashboards.</p>
+                                              <iframe width="560" height="315"
+                                                      src="https://www.youtube.com/embed/OXEiXyHKsek?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
+                                                      title="Video 7 - Dataflow Gen2 and Power BI Dashboard Development"
+                                                      frameborder="0"
+                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                      allowfullscreen>
+                                              </iframe>
+                                           </div>
+
+                                          <div class="video-summary">
+                                              <h3>📘 Video 8: Power BI + Microsoft Fabric Integration</h3>
+                                              <p>Connected Power BI Desktop directly to my Lakehouse in Microsoft Fabric. Imported tables to begin analysis and created visualizations based on structured calendar and time usage data.</p>
+                                              <iframe width="560" height="315"
+                                                      src="https://www.youtube.com/embed/MLWw4seUVdo?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
+                                                      title="Video 8 - Connecting Power BI to Microsoft Fabric Lakehouse"
+                                                      frameborder="0"
+                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                      allowfullscreen>
+                                              </iframe>
+                                           </div>
+                                       </section>
 
 
-                                  <div class="owl-carousel portfolio-details-carousel">
-                                      <div>
-                                          <iframe title="Report Section" width="900" height="473" src="https://commoditiesagricolasinteligentes.github.io/index/" frameborder="0" allowFullScreen="true"></iframe>
+
+
+
+                                  </div>
+                                  <hr class="rounded"><!--fixing hr-->
+
+                                  <div class="portfolio-details-container">
+
+                                      <div class="portfolio-description">
+                                          <h2 id="CLUS_ANAL">
+                                              Clusterization Analysis
+                                              <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen">
+                                          </h2>
+
+
+                                          <b>Introduction</b>
+                                          <p>
+                                              This notebook explores different ways to group data into meaningful clusters, helping to identify patterns and structure within complex information.
+                                              The goal is to find the most effective clustering model—one that balances accuracy, efficiency, and practical usability.
+                                          </p>
+
+                                          <p>
+                                              To achieve this, we tested several widely used approaches, including K-Means, Bisecting K-Means, and Gaussian Mixture models.
+                                              By comparing these methods, we aimed to understand which one performs best in organizing data meaningfully.
+                                          </p>
+                                          <p>
+                                              Throughout the analysis, we evaluated key indicators that measure how well the clusters are formed, such as the Silhouette Score and Davies-Bouldin Index.
+                                              Additionally, we assessed processing times to determine how efficiently PySpark handles clustering tasks.
+                                          </p>
+                                          <p>
+                                              All of this work was executed within Microsoft Fabric, a unified analytics platform that enabled scalable data processing and simplified orchestration of clustering experiments.
+                                          </p>
+                                          <p>
+                                              This notebook serves as a comprehensive overview of our findings, offering visual representations, comparisons, and insights into how these clustering techniques behave under different conditions.
+                                              Ultimately, the goal is to provide a clear understanding of the strengths and trade-offs of each model, supporting informed decisions when applying clustering to future challenges.
+                                          </p>
+
                                       </div>
+                                      <div class="video-section">
+                                          <div class="video-container">
+                                              <h6>1️⃣ Introdução à Clusterização</h6>
+                                              <iframe width="400" height="203" src="https://www.youtube.com/embed/KBx9S0oVFic" allowfullscreen></iframe>
+                                          </div>
+
+                                          <div class="video-container">
+                                              <h6>2️⃣ Clusterização com Gráfico de Barras</h6>
+                                              <iframe width="400" height="203" src="https://www.youtube.com/embed/3oARwpLhLAQ" allowfullscreen></iframe>
+                                          </div>
+
+                                          <div class="video-container">
+                                              <h6>3️⃣ Clusterização com Gráfico de Linha</h6>
+                                              <iframe width="400" height="203" src="https://www.youtube.com/embed/zZVdbRppvVI" allowfullscreen></iframe>
+                                          </div>
+
+                                          <div class="video-container">
+                                              <h6>4️⃣ Clusterização com Gráfico de Barras ao Longo do Tempo</h6>
+                                              <iframe width="400" height="203" src="https://www.youtube.com/embed/7wTtv65nKX4" allowfullscreen></iframe>
+                                          </div>
+                                      </div>
+
+
+
+
 
                                   </div>
 
 
+                                  <hr class="rounded"><!--fixing hr-->
+
+                                  <div class="portfolio-details-container">
+                                      <h2 id="ML_REGCOM"> Commodities Agrículas Inteligentes</h2> <img alt="Static Badge" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen">
+
+
+                                      <div class="owl-carousel portfolio-details-carousel">
+                                          <div>
+                                              <iframe title="Report Section" width="900" height="473" src="https://commoditiesagricolasinteligentes.github.io/index/" frameborder="0" allowFullScreen="true"></iframe>
+                                          </div>
+
+                                      </div>
 
 
 
+
+
+                                  </div>
                               </div>
-                          </div>
       </section><!-- End Portfolio Details Section -->
       <!-- ======= Skills Section ======= -->
       <section id="skills" class="skills section-bg">
@@ -720,13 +1042,26 @@
 
               <div class="row">
                   <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                      
+
                       <div class="education-item">
                           <h4>Postgraduate in Data Science (in progress) </h4>
-                          <h5>2024 (in progress)</h5>
+                          <h5>2024 - 2025</h5>
                           <p><em>Data Science Academy, Sao Paulo, SP</em></p>
                           <!--<p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>-->
                       </div>
+
+                      <div class="education-item">
+                          <h4>Data Scientist 4.0 Course (in progress) </h4>
+                          <h5>2024 - 2025</h5>
+                          <p><em>Data Science Academy, Sao Paulo, SP</em></p>
+                          <ul><p>Course includes:</p>
+                              <il>Operating System Linux, Docker and Kubernetes.</il>
+                          </ul>
+                          
+                      </div>
+
+
+
 
 
                       <div class="education-item">
