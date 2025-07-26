@@ -2,23 +2,24 @@
 
 ## Sobre Mim
 
-Olá! Meu nome é Renata Silva, e sou uma desenvolvedora back-end com 2 anos de experiência em desenvolvimento de software.  
-Minha paixão pela tecnologia me levou a especializar-me em Python, e atualmente estou estudando para me tornar uma Cientista de Dados.  
+Olá! Sou Analista de Dados e Desenvolvedora Python, apaixonada por transformar dados em soluções inteligentes. Após mais de uma década na área fiscal, decidi migrar para o mundo da tecnologia e ciência de dados — onde encontrei meu propósito em resolver problemas reais com análises, modelos e visualizações impactantes.
 
-Minha jornada profissional começou na área fiscal, mas a transição para o desenvolvimento foi um novo começo repleto de desafios e aprendizado.  
-Adoro enfrentar problemas complexos e encontrar soluções tecnológicas inovadoras.
+Atualmente, trabalho com ferramentas como Python, Power BI, Microsoft Fabric, SQL, PySpark e outras plataformas modernas de dados e nuvem.
 
-Se você está em busca de alguém apaixonado por código e movido por desafios, estou à disposição para contribuir com sua equipe!
 
-## Propósito do Portifólio
+## 🎯 Propósito do Portfólio
 
-Este repositório é o meu portfólio profissional, onde apresento projetos selecionados que demonstram minhas habilidades técnicas, criatividade e capacidade de colaboração.  
-Cada projeto listado aqui é um testemunho do meu compromisso com a excelência no desenvolvimento de software.
+Este repositório apresenta projetos práticos que demonstram minha evolução técnica, criatividade e capacidade analítica em ambientes reais e simulados. Cada projeto é acompanhado de uma breve descrição, tecnologias utilizadas e link para o código-fonte.
 
-## Projetos em Destaque
+## 🚀 Projetos em Destaque
 
-### Projeto 1: A Multilabel Classification of Amphibians 
-<li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-FINISHED-brightgreen"></li>
+
+![Status](https://img.shields.io/badge/STATUS-FINISHED-brightgreen)
+
+Classificação multilabel de espécies de anfíbios com base em dados ambientais e GIS.  
+🔧 Tecnologias: Python, Scikit-learn, Skmultilearn, Matplotlib  
+🔗 [Repositório](https://github.com/Renata-Thomazelli/amphibians)
+
 
 -  **Descrição** Este dataset foi disponibilizado pela UC Irvine Machine Learning Repository.
   
@@ -40,11 +41,15 @@ Cada projeto listado aqui é um testemunho do meu compromisso com a excelência 
 >		<li> sklearn</li>
 >		<li> multiprocessing</li>
 
-- **[Link para o Repositório](https://github.com/Renata-Thomazelli/amphibians)**
 
 
-### Projeto 2: Rental Bike in Seoul
-<li><img alt="Static Badge" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00"</li>
+### 🚲 Rental Bike in Seoul  
+![Status](https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00)
+
+Modelo de regressão para prever demanda de aluguel de bicicletas com base em dados meteorológicos.  
+🔧 Tecnologias: Python, pandas, missingno, seaborn, sklearn  
+🔗 [Repositório](https://github.com/Renata-Thomazelli/seoul_bikes)
+
 
 - **Descrição** Este dataset foi disponibilizado pela cidade de Seoul e contem informações do tempo e do total de bikes alugadas por hora.
 
@@ -61,24 +66,42 @@ Cada projeto listado aqui é um testemunho do meu compromisso com a excelência 
 >		<li> sklearn</li>
 </ul>
 
-- **[Link para o Repositório](https://github.com/Renata-Thomazelli/seoul_bikes)**
+### ⏰ Otimização de Tempo com Microsoft Fabric  
+Análise de hábitos e produtividade pessoal usando notebooks no Fabric e visualizações com Power BI.  
+🔧 Tecnologias: Lakehouse, PySpark, DAX, Fabric Notebooks
 
 
+### 🔍 Clusterização com PySpark  
+Segmentação comportamental com clustering em datasets sintéticos e reais.  
+🔧 Tecnologias: PySpark, Fabric, Databricks (em simulação)
 
-## Habilidades 
+---
 
-- Enumere suas habilidades técnicas, como programação em Python, desenvolvimento de APIs REST, design de bancos de dados SQL, etc.
-- Inclua tambem habilidades Interpessoais, como trablaho em equipe, comunicação e gerenciameto de tempo.
+## ⚒️ Habilidades Técnicas
 
+| Categoria         | Ferramentas & Linguagens                                   |
+|------------------|------------------------------------------------------------|
+| Análise de Dados | Python, pandas, numpy, matplotlib, seaborn                |
+| Machine Learning | Scikit-learn, skmultilearn, PySpark                       |
+| Visualização     | Power BI, Looker Studio                                   |
+| Cloud & Big Data | Microsoft Fabric, Azure, Lakehouse, SQL                   |
+| Desenvolvimento  | APIs REST, Flask (básico), C#, Git, GitHub Actions        |
 
+## 🤝 Habilidades Interpessoais
 
-## Contato
+- Comunicação clara e objetiva  
+- Facilidade em trabalhar em equipe remota  
+- Organização e foco em prazos e entrega  
+- Capacidade de aprendizado rápido
 
-- **LinkedIn**: [Renata Thomazelli](https://www.linkedin.com/in/renatathomazelli/)
-- **Email**: recalesi@outlook.com
+## 📫 Contato
 
+- 💼 [LinkedIn](https://www.linkedin.com/in/renatathomazelli/)  
+- 📧 recalesi@outlook.com  
 
 Para mais informações ou para discutir oportunidades de colaboração, sinta-se a vontade para entrar em contato.
+
+---
 
 ## Licença
 
