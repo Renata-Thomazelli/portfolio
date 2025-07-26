@@ -84,7 +84,7 @@ Segmentação comportamental com clustering em datasets sintéticos e reais.
 | Análise de Dados | Python, pandas, numpy, matplotlib, seaborn                |
 | Machine Learning | Scikit-learn, skmultilearn, PySpark                       |
 | Visualização     | Power BI, Looker Studio                                   |
-| Cloud & Big Data | Microsoft Fabric, Azure, Lakehouse, SQL                   |
+| Cloud & Big Data | Microsoft Fabric, Azure, Lakehouse, SQL, AWS              |
 | Desenvolvimento  | APIs REST, Flask (básico), C#, Git, GitHub Actions        |
 
 ## 🤝 Habilidades Interpessoais
