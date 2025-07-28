@@ -218,6 +218,7 @@
                       <li><a href="#ML_LRBS">A Linear Regression</a></li>
                       <li><a href="#OPMSRWMF" title="FabricFlow: A Python & PySpark Pipeline">FabricFlow Project</a></li>
                       <li><a href="#CLUS_ANAL" title="A Clusterization Project withn Microsoft Fabric">A Clusterization Project</a></li>
+                      <li><a href="#REAL-TIME" title="Real-Time Data Engineering with Microsoft Fabric – BikeTelemetry Project">Real-Time Engineering</a></li>
                   </ul>
               </li>
               <li><a href="#skills"><i class="bx bx-user"></i> <span>Skills</span></a></li>
@@ -349,7 +350,7 @@
                                   </ul>
                               </li>
 
-                              
+
                               <li>
                                   <b>Power BI Projects</b>
                                   <ul>
@@ -380,7 +381,15 @@
                                           <a href="#CLUS_ANAL">Clusterization Analysis in Microsoft Fabric</a>
                                       </li>
 
-                                  </ul>
+                                      li>
+                                      <b>Real-Time Data Engineering</b>
+                                      <br>
+
+                                      <img alt="Status" src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-FFFF00">
+                                      <a href="#REAL-TIME">Real-Time Data Engineering with Microsoft Fabric – BikeTelemetry Project</a>
+                              </li>
+
+                          </ul>
 
                               </li>
                           </ul>
@@ -754,14 +763,14 @@
                                           <div class="video-summary">
                                               <h3>📘 Video 2: Data Organization and Layering in Microsoft Fabric</h3>
                                               <p>I introduced my data workspace and structured raw calendar data using Bronze, Silver, and Gold layers. I developed a function to clean and transform data, applied basic feature engineering, and converted a DataFrame to JSON for use in PySpark.</p>
-                                          
-                                               <iframe width="560" height="315"
-                                                       src="https://www.youtube.com/embed/4fPXRHMc-fM?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
-                                                       title="Video 2 - Organizing Data and Applying Medallion Architecture"
-                                                       frameborder="0"
-                                                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                       allowfullscreen>
-                                               </iframe>
+
+                                              <iframe width="560" height="315"
+                                                      src="https://www.youtube.com/embed/4fPXRHMc-fM?list=PL5Pb7c4Rr5Y6jfLHtAhLzzV03znX8p1LD"
+                                                      title="Video 2 - Organizing Data and Applying Medallion Architecture"
+                                                      frameborder="0"
+                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                      allowfullscreen>
+                                              </iframe>
                                           </div>
 
                                           <div class="video-summary">
@@ -774,7 +783,7 @@
                                                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                       allowfullscreen>
                                               </iframe>
-                                            </div>
+                                          </div>
 
                                           <div class="video-summary">
                                               <h3>📘 Video 4: Data Extraction and Category Analysis</h3>
@@ -822,7 +831,7 @@
                                                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                       allowfullscreen>
                                               </iframe>
-                                           </div>
+                                          </div>
 
                                           <div class="video-summary">
                                               <h3>📘 Video 8: Power BI + Microsoft Fabric Integration</h3>
@@ -834,8 +843,8 @@
                                                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                       allowfullscreen>
                                               </iframe>
-                                           </div>
-                                       </section>
+                                          </div>
+                                      </section>
 
 
 
@@ -924,14 +933,66 @@
                                           </iframe>
                                       </div>
 
-                                      
-                                  </div>
-
-
-
-
 
                                   </div>
+                                  <hr class="rounded"><!--fixing hr-->
+
+                                  
+
+                                  <div class="portfolio-description">
+
+
+                                      <h2 id="REAL-TIME">
+                                          🚴 Real-Time Data Engineering with Microsoft Fabric – BikeTelemetry Project
+                                      </h2>
+                                      <p>
+                                          In this project, I orchestrated a full-cycle real-time analytics pipeline for urban bike telemetry using <strong>Microsoft Fabric</strong> and <strong>KQL</strong>.
+                                          The initiative involved designing and implementing a robust event house to stream incoming data, refining ingestion strategies, and engineering transformations to ensure data quality and reliability.
+                                      </p>
+
+                                      <h3>🧩 Key Accomplishments</h3>
+                                      <ul>
+                                          <li><strong>✅ Event House Configuration:</strong> Initiated a Fabric Eventstream to capture telemetry events from the urban bike system in real time.</li>
+                                          <li><strong>🧠 Data Cleaning and Standardization:</strong> Engineered a transformation pipeline to fix inconsistencies in neighborhood naming using dynamic join logic.</li>
+                                          <li><strong>🏠 Lakehouse Deployment:</strong> Established a Lakehouse to consolidate cleaned records and serve as a durable analytical store.</li>
+                                          <li><strong>⏳ Temporal Gap Resolution:</strong> Investigated and resolved a hidden ingestion gap between manual append and policy activation, isolating and correcting a 366-record delta.</li>
+                                          <li><strong>📊 Validation & Reconciliation:</strong> Implemented checks to confirm full sync between raw and cleaned datasets (<code>Bikes</code> vs <code>BikesCleaned</code>) — with zero data loss post-fix.</li>
+                                      </ul>
+
+                                      <p>
+                                          This hands-on project showcases my proficiency in real-time data flows, temporal diagnostics, and query optimization using KQL — alongside practical problem-solving in stream ingestion and lakehouse architecture.
+                                      </p>
+
+
+                                      <h2>📊 Bicycle EventStream Dashboard</h2>
+                                      <p>
+                                          This dashboard was created using data from the <strong>Bicycling EventStream</strong> sample available in
+                                          <em>Microsoft Fabric</em>. Although the dataset is simulated, it mirrors real-time behavior from actual
+                                          bike-sharing systems—making it ideal for testing ingestion flows, building dashboards, and writing
+                                          advanced KQL queries.
+                                      </p>
+                                      <p>
+                                          The dashboard is divided into two pages. In this first section, you'll find a breakdown of data records,
+                                          including ingestion volume over time, distribution by neighborhood, and detailed record patterns.
+                                          These visuals demonstrate how real-time data—whether simulated or live—can be transformed into
+                                          actionable insights for operational analysis and decision-making.
+                                      </p>
+
+                                      <div class="video-summary">
+                                          <h3>📘 Bicycle EventStream Dashboard part 1</h3>
+                                          <iframe width="560" height="315"
+                                                  src="https://www.youtube.com/embed/1Kg23bLvwO8" 
+                                                  title="Video 3 - Clustering with Bar Chart"
+                                                  frameborder="0"
+                                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                  allowfullscreen>
+                                          </iframe>
+                                      </div>
+
+
+
+                                  </div>
+                                  
 
 
                                   <hr class="rounded"><!--fixing hr-->
@@ -953,7 +1014,7 @@
 
                                   </div>
                               </div>
-      </section><!-- End Portfolio Details Section -->
+</section><!-- End Portfolio Details Section -->
       <!-- ======= Skills Section ======= -->
       <section id="skills" class="skills section-bg">
           <div class="container">
