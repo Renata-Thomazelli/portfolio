@@ -75,6 +75,13 @@ Análise de hábitos e produtividade pessoal usando notebooks no Fabric e visual
 Segmentação comportamental com clustering em datasets sintéticos e reais.  
 🔧 Tecnologias: PySpark, Fabric, Databricks (em simulação)
 
+
+### 🚴 Real-Time Intelligence com Microsoft Fabric  
+Dashboard em tempo real para análise de disponibilidade de bicicletas em Londres, usando dados simulados do EventStream no Microsoft Fabric. Inclui queries KQL, storytelling e visualizações operacionais.  
+🔧 Tecnologias: EventStream, KQL, Microsoft Fabric, Power BI, GitHub Pages
+🔗 [Ver projeto no GitHub](https://github.com/Renata-Thomazelli/BicycleEventStreamDashboard)
+
+
 ---
 
 ## ⚒️ Habilidades Técnicas
