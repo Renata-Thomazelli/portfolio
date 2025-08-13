@@ -1103,3 +1103,15 @@ section {
   background: #f9f9f9;
   margin-bottom: 15px;
 }
+
+/*---------------------------------------------------------
+# Divisors
+---------------------------------------------------------*/
+
+.linha-projeto {
+  border: none;
+  height: 4px;              /* Espessura da linha */
+  background-color: #2c3e50; /* Cor da linha */
+  margin: 40px 0;           /* Espaçamento acima e abaixo */
+  border-radius: 2px;       /* Cantos arredondados (opcional) */
+}

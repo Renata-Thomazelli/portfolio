@@ -68,20 +68,30 @@ Modelo de regressão para prever demanda de aluguel de bicicletas com base em da
 
 ### ⏰ Otimização de Tempo com Microsoft Fabric  
 Análise de hábitos e produtividade pessoal usando notebooks no Fabric e visualizações com Power BI.  
-🔧 Tecnologias: Lakehouse, PySpark, DAX, Fabric Notebooks
+🔧 Tecnologias: Lakehouse, PySpark, DAX, Fabric Notebooks, Python, Pandas, Jupyter Notebooks
 🔗 [Ver projeto no GitHub](https://github.com/Renata-Thomazelli/TimeManagement)
 
+---
 
 ### 🔍 Clusterização com PySpark  
 Segmentação comportamental com clustering em datasets sintéticos e reais.  
 🔧 Tecnologias: PySpark, Fabric
+🔗 Em breve
 
+--- 
+
+### 🔍 Análise de Clusterização
+Análise comparativa de modelos de clusterização usando PySpark no Microsoft Fabric.
+Avalia as pontuações de Silhouette e Davies-Bouldin, além do tempo de execução, para identificar a abordagem mais eficiente e precisa para segmentação de dados.
+🔧 Tecnologias: Python, PySpark, Microsoft Fabric, Pandas, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebooks, Git, GitHub
+🔗 [Ver no GitHub](https://github.com/Renata-Thomazelli/ClusterizationAnalysis)
+
+---
 
 ### 🚴 Real-Time Intelligence com Microsoft Fabric  
 Dashboard em tempo real para análise de disponibilidade de bicicletas em Londres, usando dados simulados do EventStream no Microsoft Fabric. Inclui queries KQL, storytelling e visualizações operacionais.  
 🔧 Tecnologias: EventStream, KQL, Microsoft Fabric, Power BI, GitHub Pages
 🔗 [Ver projeto no GitHub](https://github.com/Renata-Thomazelli/BicycleEventStreamDashboard)
-
 
 ---
 
