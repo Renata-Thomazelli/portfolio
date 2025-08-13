@@ -62,14 +62,24 @@ This repository showcases practical projects that reflect my technical growth, c
 
 ### ⏰ Time Optimization with Microsoft Fabric  
 Analysis of personal habits and productivity using Fabric notebooks and Power BI visualizations  
-🔧 Technologies: Lakehouse, PySpark, DAX, Fabric Notebooks  
+🔧 Technologies: Lakehouse, PySpark, DAX, Fabric Notebooks,Python, Pandas, Jupyter Notebooks
 🔗 [View on GitHub](https://github.com/Renata-Thomazelli/TimeManagement)
 
 ---
 
 ### 🔍 Clustering with PySpark  
 Behavioral segmentation using clustering on synthetic and real datasets  
-🔧 Technologies: PySpark, Fabric
+🔧 Technologies: PySpark, Microsoft Fabric
+🔗 Coming soon
+
+---
+
+### 🔍 Clustering Analysis  
+Comparative analysis of clustering models using PySpark in Microsoft Fabric.   
+Evaluates Silhouette and Davies-Bouldin scores, plus execution time, to identify the most efficient and accurate approach for data segmentation.
+🔧 Technologies: Python, PySpark, Microsoft Fabric, Pandas, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebooks, Git, GitHub
+🔗 [View on GitHub](https://github.com/Renata-Thomazelli/ClusterizationAnalysis)
+
 ---
 
 ### 🚴 Real-Time Intelligence with Microsoft Fabric  
